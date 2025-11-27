@@ -1,7 +1,7 @@
 
 // Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Missing Structured Data
-// Applied: 2025-11-27T18:26:26.769Z
+// Issue: Meta Description Length Issue
+// Applied: 2025-11-27T18:31:21.342Z
 
 import type { Metadata } from 'next'
 
