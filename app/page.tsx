@@ -1,7 +1,7 @@
 
 // Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Meta Description Length Issue
-// Applied: 2025-11-27T18:31:21.342Z
+// Issue: Missing Canonical Tag
+// Applied: 2025-11-27T18:41:51.439Z
 
 import type { Metadata } from 'next'
 
