@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Digital Marketing Agency',
-  description: 'Your digital transformation partner delivering innovative solutions for web design, SEO, and marketing.',
-}
+// Auto-generated SEO metadata by SEO Audit Tool
+// Issue: Slow Page Load Time
+// Applied: 2025-11-28T06:52:25.631Z
+
+export const metadata: Metadata = {}
 
 export default function Home() {
   return (
