@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {}
-
-
-// Auto-generated SEO metadata by SEO Audit Tool
+export const metadata: Metadata = {
+  "description": "[Your digital transformation partner. agency-website-six-phi.vercel.app delivers innovative solutions for web design, SEO, and marketing. Let"
+}
+ Auto-generated SEO metadata by SEO Audit Tool
 // Issue: Missing Canonical Tag
 // Applied: 2025-11-27T18:41:51.439Z
 
