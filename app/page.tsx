@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 // Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Title Tag Length Issue
-// Applied: 2025-11-28T07:35:58.998Z
+// Issue: Meta Description Length Issue
+// Applied: 2025-11-28T07:36:03.637Z
 
 export const metadata: Metadata = {
-  "title": "Digital Marketing Agency | agency-website-six-phi.vercel.app"
+  "description": "[Your Next.js agency helping businesses thrive online. We design, develop, and deploy custom web solutions. Contact agency-website-six-phi.vercel.app today!]"
 }
 
 export default function Home() {
