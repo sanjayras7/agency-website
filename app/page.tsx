@@ -1,30 +1,23 @@
-import type { Metadata }       
+ import type { Metadata }
   from 'next'
 
   export const metadata:
   Metadata = {
-    "title": "Digital
-  Marketing Agency | agency-w    
-  ebsite-six-phi.vercel.app",    
-    "description": "Your
+    title: 'Digital Marketing
+   Agency',
+    description: 'Your
   digital transformation
-  partner. agency-website-six    
-  -phi.vercel.app delivers       
-  innovative solutions for       
+  partner delivering
+  innovative solutions for
   web design, SEO, and
-  marketing. Let's build your    
-   success!"
+  marketing.',
   }
 
-  export default function        
+  export default function
   Home() {
     return (
       <main>
-        <h1>Welcome to
-  Digital Marketing
-  Agency</h1>
-        <p>Your digital
-  transformation partner</p>     
+        <h1>Welcome</h1>
       </main>
     )
   }
