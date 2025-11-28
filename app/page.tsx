@@ -1,3 +1,7 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {}
+
 
 // Auto-generated SEO metadata by SEO Audit Tool
 // Issue: Missing Canonical Tag
