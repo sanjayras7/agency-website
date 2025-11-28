@@ -5,9 +5,10 @@
 
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {}
-
-// Or use generateMetadata for dynamic routes:
+export const metadata: Metadata = {
+  "title": "Digital Marketing Agency | agency-website-six-phi.vercel.app"
+}
+ Or use generateMetadata for dynamic routes:
 /*
 export async function generateMetadata(): Promise<Metadata> {
   return {}
