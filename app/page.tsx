@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 // Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Missing Canonical Tag
-// Applied: 2025-11-28T06:52:40.330Z
+// Issue: Thin Content
+// Applied: 2025-11-28T07:35:52.760Z
 
 export const metadata: Metadata = {}
 
