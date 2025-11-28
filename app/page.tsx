@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 // Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Potential Orphaned Page
-// Applied: 2025-11-28T07:36:08.150Z
+// Issue: Missing Canonical Tag
+// Applied: 2025-11-28T07:36:12.652Z
 
 export const metadata: Metadata = {}
 
