@@ -1,16 +1,27 @@
 import type { Metadata } from 'next'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import Projects from './components/Projects'
+import ToolShowcase from './components/ToolShowcase'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-// Auto-generated SEO metadata by SEO Audit Tool
-// Issue: Missing Structured Data
-// Applied: 2025-11-28T07:36:17.495Z
-
-export const metadata: Metadata = {}
+export const metadata: Metadata = {
+  title: 'Sanjay.Dev | Full-Stack Developer & SEO Strategist',
+  description: 'Expert Web Development, SEO, and AI Solutions. View my portfolio of high-performance websites and growth strategies.',
+}
 
 export default function Home() {
   return (
-    <main>
-      <h1>Welcome to Digital Marketing Agency</h1>
-      <p>Your digital transformation partner</p>
+    <main className="min-h-screen bg-[#030014] text-white selection:bg-purple-500/30">
+      <Navbar />
+      <Hero />
+      <Services />
+      <Projects />
+      <ToolShowcase />
+      <Contact />
+      <Footer />
     </main>
   )
 }
