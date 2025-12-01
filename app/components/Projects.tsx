@@ -1,3 +1,8 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ExternalLink, Github, TrendingUp, Zap, Search, ArrowRight } from 'lucide-react';
+
 export default function Projects() {
     const projects = [
         {
@@ -5,28 +10,44 @@ export default function Projects() {
             category: "Web Development",
             description: "A high-performance Shopify Headless build using Next.js. Achieved a 99/100 Core Web Vitals score and increased conversion by 40%.",
             tags: ["Next.js", "Shopify", "Tailwind CSS"],
-            color: "from-blue-500 to-cyan-500"
+            color: "from-blue-500 to-cyan-500",
+            metrics: [
+                { label: "Performance", value: "99/100", icon: <Zap className="w-3 h-3" /> },
+                { label: "Conversion", value: "+40%", icon: <TrendingUp className="w-3 h-3" /> }
+            ]
         },
         {
             title: "AI SEO Analyzer Tool",
             category: "SaaS Product",
             description: "My proprietary tool that analyzes websites for Generative Engine Optimization (GEO) readiness. Currently used by 50+ beta testers.",
             tags: ["React", "Python", "OpenAI API"],
-            color: "from-purple-500 to-pink-500"
+            color: "from-purple-500 to-pink-500",
+            metrics: [
+                { label: "Users", value: "50+", icon: <Github className="w-3 h-3" /> },
+                { label: "Accuracy", value: "95%", icon: <Search className="w-3 h-3" /> }
+            ]
         },
         {
             title: "Local Business Growth",
             category: "SEO & GEO Campaign",
             description: "Comprehensive local SEO strategy for a dental chain. Ranked #1 for 'Dentist near me' in 5 cities and optimized for Voice Search.",
             tags: ["Local SEO", "Schema Markup", "GMB"],
-            color: "from-green-500 to-emerald-500"
+            color: "from-green-500 to-emerald-500",
+            metrics: [
+                { label: "Rank #1", value: "5 Cities", icon: <Search className="w-3 h-3" /> },
+                { label: "Traffic", value: "+200%", icon: <TrendingUp className="w-3 h-3" /> }
+            ]
         },
         {
             title: "Real Estate Dashboard",
             category: "Web App",
             description: "A custom CRM and property management dashboard for a real estate agency, featuring automated lead scoring and map integration.",
             tags: ["Vue.js", "Firebase", "Google Maps API"],
-            color: "from-orange-500 to-red-500"
+            color: "from-orange-500 to-red-500",
+            metrics: [
+                { label: "Leads", value: "Auto-Scored", icon: <Zap className="w-3 h-3" /> },
+                { label: "Uptime", value: "99.9%", icon: <TrendingUp className="w-3 h-3" /> }
+            ]
         }
     ];
 
@@ -34,35 +55,81 @@ export default function Projects() {
         <section id="projects" className="py-24 relative">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="mb-16">
-                    <div className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-purple-300 mb-4">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-purple-300 mb-4"
+                    >
                         Selected Work
-                    </div>
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                    </motion.div>
+                    <motion.h2
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-3xl md:text-5xl font-bold mb-6"
+                    >
                         Featured <span className="text-gradient">Projects</span>
-                    </h2>
-                    <p className="text-gray-400 max-w-2xl text-lg">
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-gray-400 max-w-2xl text-lg"
+                    >
                         A showcase of my best work, ranging from high-performance websites to complex AI-driven applications and successful SEO campaigns.
-                    </p>
+                    </motion.p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="group relative rounded-2xl overflow-hidden bg-[#0a0a0a] border border-white/10 hover:border-purple-500/30 transition-all duration-300">
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className="group relative rounded-2xl overflow-hidden bg-[#0a0a0a] border border-white/10 hover:border-purple-500/30 transition-all duration-300"
+                        >
                             {/* Image Placeholder / Gradient */}
                             <div className={`h-64 w-full bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity relative overflow-hidden`}>
                                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-                                <div className="absolute bottom-4 left-4">
-                                    <span className="px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs font-medium border border-white/10">
+                                <div className="absolute bottom-4 left-4 flex gap-2">
+                                    <span className="px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs font-medium border border-white/10 text-white">
                                         {project.category}
                                     </span>
                                 </div>
                             </div>
 
                             <div className="p-8">
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors">{project.title}</h3>
+                                <div className="flex justify-between items-start mb-4">
+                                    <h3 className="text-2xl font-bold group-hover:text-purple-400 transition-colors">{project.title}</h3>
+                                    <div className="flex gap-2">
+                                        <button className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
+                                            <Github className="w-5 h-5" />
+                                        </button>
+                                        <button className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
+                                            <ExternalLink className="w-5 h-5" />
+                                        </button>
+                                    </div>
+                                </div>
+
                                 <p className="text-gray-400 mb-6 leading-relaxed">
                                     {project.description}
                                 </p>
+
+                                {/* Metrics */}
+                                <div className="grid grid-cols-2 gap-4 mb-6">
+                                    {project.metrics.map((metric, i) => (
+                                        <div key={i} className="flex items-center gap-2 text-sm text-gray-300 bg-white/5 p-2 rounded border border-white/5">
+                                            <span className="text-purple-400">{metric.icon}</span>
+                                            <span className="font-bold">{metric.value}</span>
+                                            <span className="text-gray-500 text-xs">{metric.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
 
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map((tag, i) => (
@@ -72,13 +139,13 @@ export default function Projects() {
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
                 <div className="mt-12 text-center">
                     <a href="#contact" className="inline-flex items-center gap-2 text-white border-b border-purple-500 pb-1 hover:text-purple-400 transition-colors">
-                        View all projects <span>→</span>
+                        View all projects <ArrowRight className="w-4 h-4" />
                     </a>
                 </div>
             </div>

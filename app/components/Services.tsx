@@ -1,28 +1,39 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { Code2, Search, Bot, Smartphone, Brain, ArrowRight } from 'lucide-react';
+
 export default function Services() {
     const services = [
         {
-            title: "Custom Web Development",
-            description: "I build fast, responsive, and visually stunning websites tailored to your brand. Specializing in Next.js, React, and modern UI/UX design.",
-            icon: "💻",
+            title: "Full Stack Web Development",
+            description: "High-performance, scalable web applications built with Next.js 15, React, and Node.js. Optimized for speed and conversion.",
+            icon: <Code2 className="w-8 h-8" />,
             color: "from-blue-500 to-cyan-500"
         },
         {
-            title: "SEO & GEO Strategy",
-            description: "Don't just rank on Google. I optimize your content for AI engines like ChatGPT and Perplexity (GEO) to future-proof your traffic.",
-            icon: "🚀",
+            title: "Advanced SEO Optimization",
+            description: "Technical and On-page SEO strategies that drive organic traffic. I fix core web vitals, structure data, and dominate SERPs.",
+            icon: <Search className="w-8 h-8" />,
             color: "from-purple-500 to-indigo-500"
         },
         {
-            title: "AI Tool Development",
-            description: "Need a custom AI agent or automation? I develop bespoke AI solutions to streamline your workflows and engage your users.",
-            icon: "🤖",
-            color: "from-pink-500 to-rose-500"
+            title: "GEO (AI Search Optimization)",
+            description: "Future-proof your brand for AI engines. I optimize your content to be the top answer on ChatGPT, Gemini, Claude, and Perplexity.",
+            icon: <Bot className="w-8 h-8" />,
+            color: "from-emerald-500 to-teal-500"
         },
         {
-            title: "Full-Service Freelancing",
-            description: "Your dedicated technical partner. I handle everything from domain setup to deployment and ongoing maintenance.",
-            icon: "⚡",
-            color: "from-emerald-500 to-teal-500"
+            title: "App Development",
+            description: "Cross-platform mobile apps using React Native and Firebase. Native performance with a single codebase for iOS and Android.",
+            icon: <Smartphone className="w-8 h-8" />,
+            color: "from-orange-500 to-red-500"
+        },
+        {
+            title: "AI Automation & Tools",
+            description: "Custom AI agents, chatbots, and workflow automations that save time and reduce costs. Powered by OpenAI and Anthropic APIs.",
+            icon: <Brain className="w-8 h-8" />,
+            color: "from-pink-500 to-rose-500"
         }
     ];
 
@@ -30,25 +41,61 @@ export default function Services() {
         <section id="services" className="py-24 relative">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">My <span className="text-gradient">Expertise</span></h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
-                        I offer a comprehensive suite of digital services to help businesses thrive in the modern web landscape.
-                    </p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-purple-300 mb-4"
+                    >
+                        My Expertise
+                    </motion.div>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-3xl md:text-5xl font-bold mb-4"
+                    >
+                        Comprehensive <span className="text-gradient">Digital Solutions</span>
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-gray-400 max-w-2xl mx-auto"
+                    >
+                        I combine engineering precision with marketing strategy to deliver products that not only look great but also perform and rank.
+                    </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((service, index) => (
-                        <div key={index} className="group p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent hover:from-purple-500/50 transition-all duration-300">
-                            <div className="bg-[#0a0a0a] p-8 rounded-xl h-full border border-white/5 relative overflow-hidden group-hover:translate-y-[-5px] transition-transform">
-                                <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${service.color} opacity-10 blur-2xl rounded-full group-hover:opacity-20 transition-opacity`} />
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className="group relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent hover:from-purple-500/50 transition-all duration-300"
+                        >
+                            <div className="bg-[#0a0a0a] p-8 rounded-xl h-full border border-white/5 relative overflow-hidden group-hover:translate-y-[-5px] transition-transform flex flex-col">
+                                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-5 blur-3xl rounded-full group-hover:opacity-20 transition-opacity`} />
 
-                                <div className="text-4xl mb-6">{service.icon}</div>
-                                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                                <p className="text-gray-400 text-sm leading-relaxed">
+                                <div className="mb-6 p-3 bg-white/5 w-fit rounded-lg border border-white/10 group-hover:border-white/20 transition-colors text-white">
+                                    {service.icon}
+                                </div>
+
+                                <h3 className="text-xl font-bold mb-3 group-hover:text-purple-300 transition-colors">{service.title}</h3>
+                                <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
                                     {service.description}
                                 </p>
+
+                                <div className="flex items-center text-sm font-medium text-gray-500 group-hover:text-white transition-colors cursor-pointer">
+                                    Learn more <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
