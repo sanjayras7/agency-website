@@ -31,17 +31,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <div className="text-sm text-gray-400">Email</div>
-                                    <div className="font-medium text-white">hello@sanjay.dev</div>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
-                                <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
-                                    <Phone className="w-5 h-5" />
-                                </div>
-                                <div>
-                                    <div className="text-sm text-gray-400">Phone</div>
-                                    <div className="font-medium text-white">+1 (555) 123-4567</div>
+                                    <div className="font-medium text-white">sanjaykumaranbalu3112@gmail.com</div>
                                 </div>
                             </div>
 
@@ -51,7 +41,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <div className="text-sm text-gray-400">Location</div>
-                                    <div className="font-medium text-white">Remote / Worldwide</div>
+                                    <div className="font-medium text-white">Chennai, India (Remote Worldwide)</div>
                                 </div>
                             </div>
                         </div>

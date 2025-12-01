@@ -1,19 +1,18 @@
+import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+
 export default function Footer() {
     return (
-        <footer className="border-t border-white/10 py-12 bg-black/20">
-            <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="text-2xl font-bold tracking-tighter">
-                    <span className="text-gradient">SEO</span>Master
+        <footer className="py-8 border-t border-white/10 bg-black/50 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="text-gray-400 text-sm">
+                    © 2025 Sanjay.Dev. All rights reserved.
                 </div>
 
-                <div className="text-gray-500 text-sm">
-                    © {new Date().getFullYear()} SEO Master. All rights reserved.
-                </div>
-
-                <div className="flex gap-6 text-gray-400">
-                    <a href="#" className="hover:text-white transition-colors">Twitter</a>
-                    <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-                    <a href="#" className="hover:text-white transition-colors">GitHub</a>
+                <div className="flex items-center gap-6">
+                    <a href="#" className="text-gray-400 hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
+                    <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
+                    <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
+                    <a href="mailto:sanjaykumaranbalu3112@gmail.com" className="text-gray-400 hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
                 </div>
             </div>
         </footer>

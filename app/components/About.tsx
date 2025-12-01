@@ -9,7 +9,7 @@ export default function About() {
         { name: "SEO & GEO", icon: <Globe className="w-5 h-5" /> },
         { name: "AI Integration", icon: <Brain className="w-5 h-5" /> },
         { name: "React Native", icon: <Smartphone className="w-5 h-5" /> },
-        { name: "Backend Systems", icon: <Database className="w-5 h-5" /> },
+        { name: "PostgreSQL & Firebase", icon: <Database className="w-5 h-5" /> },
         { name: "Performance", icon: <Rocket className="w-5 h-5" /> },
     ];
 
@@ -34,10 +34,10 @@ export default function About() {
 
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
-                                I am more than just a developer. I am a strategic partner who understands that code is a means to an end: <strong>driving revenue and user engagement.</strong>
+                                I am <strong>Sanjaykumaran B</strong>, a Full-Stack Developer and SEO Engineer based in Chennai. I don't just write code; I build digital assets that drive revenue.
                             </p>
                             <p>
-                                With a background in both heavy-duty engineering (Full Stack & AI) and growth marketing (SEO & GEO), I build products that are not only technically sound but also discoverable and profitable.
+                                With experience building complex SaaS platforms like <strong>BillyBills</strong> and AI-powered SEO tools, I understand the full lifecycle of a digital product—from database design to getting it ranked #1 on Google.
                             </p>
                             <p>
                                 My mission is simple: To empower businesses with future-proof digital solutions that dominate search engines—both traditional (Google) and generative (ChatGPT).
@@ -74,7 +74,7 @@ export default function About() {
                                     <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">1</div>
                                     <div>
                                         <h4 className="font-bold text-white">Technical Excellence</h4>
-                                        <p className="text-sm text-gray-400 mt-1">Clean, maintainable code built on modern stacks like Next.js and React Native.</p>
+                                        <p className="text-sm text-gray-400 mt-1">Clean, maintainable code built on modern stacks like Next.js 15, Prisma, and React Native.</p>
                                     </div>
                                 </div>
 

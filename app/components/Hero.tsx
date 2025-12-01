@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, Code2, Search, Bot } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -27,18 +27,18 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                        Scaling Brands with <br />
-                        <span className="text-gradient">AI-Driven SEO</span> & <br />
-                        <span className="text-gradient-secondary">High-Performance Engineering</span>
+                        AI-Powered SEO & <br />
+                        <span className="text-gradient">Web Experiences</span> <br />
+                        That Actually Convert
                     </h1>
 
                     <p className="text-xl text-gray-400 max-w-xl leading-relaxed">
-                        I build fast, scalable applications and optimize them for the new era of Search (GEO). Your partner for full-stack development and digital growth.
+                        I’m a Full-Stack Developer & SEO Engineer from Chennai. I build high-performance websites and AI-powered SEO systems that help your business grow on Google AND AI search.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
                         <Link href="#contact" className="group px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold text-white transition-all glow flex items-center gap-2">
-                            Get a Free Audit
+                            Book a Free Consultation
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <Link href="#projects" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full font-semibold text-white transition-all">
@@ -54,7 +54,7 @@ export default function Hero() {
                                 </div>
                             ))}
                         </div>
-                        <p>Trusted by 20+ businesses worldwide</p>
+                        <p>Helping startups & founders worldwide</p>
                     </div>
                 </motion.div>
 
@@ -76,46 +76,48 @@ export default function Hero() {
                                 </div>
                                 <div className="flex items-center gap-2 text-xs text-gray-400">
                                     <Sparkles className="w-3 h-3 text-purple-400" />
-                                    AI Analysis Active
+                                    Sanjay.Dev Portfolio
                                 </div>
                             </div>
 
                             <div className="space-y-6">
-                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default">
-                                    <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-2xl">💻</div>
-                                    <div>
-                                        <div className="text-sm font-bold text-white">Full Stack Dev</div>
-                                        <div className="text-xs text-gray-400">Next.js 15, React, Node.js</div>
+                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default group">
+                                    <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                        <Code2 className="w-6 h-6 text-blue-400" />
                                     </div>
-                                    <div className="ml-auto text-green-400 text-xs font-mono">100%</div>
+                                    <div>
+                                        <div className="text-sm font-bold text-white">Web Development</div>
+                                        <div className="text-xs text-gray-400">Next.js 15, React, Tailwind</div>
+                                    </div>
+                                    <div className="ml-auto text-blue-400 text-xs font-mono">Full Stack</div>
                                 </div>
 
-                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default">
-                                    <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-2xl">🚀</div>
+                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default group">
+                                    <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                        <Search className="w-6 h-6 text-purple-400" />
+                                    </div>
                                     <div>
                                         <div className="text-sm font-bold text-white">SEO & GEO</div>
-                                        <div className="text-xs text-gray-400">Google & ChatGPT Ranking</div>
+                                        <div className="text-xs text-gray-400">Google & AI Search Visibility</div>
                                     </div>
-                                    <div className="ml-auto text-green-400 text-xs font-mono">#1</div>
+                                    <div className="ml-auto text-purple-400 text-xs font-mono">Top Rank</div>
                                 </div>
 
-                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default">
-                                    <div className="w-12 h-12 rounded-lg bg-pink-500/20 flex items-center justify-center text-2xl">🤖</div>
-                                    <div>
-                                        <div className="text-sm font-bold text-white">AI Automation</div>
-                                        <div className="text-xs text-gray-400">Custom Agents & Tools</div>
+                                <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-default group">
+                                    <div className="w-12 h-12 rounded-lg bg-pink-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                        <Bot className="w-6 h-6 text-pink-400" />
                                     </div>
-                                    <div className="ml-auto text-green-400 text-xs font-mono">Active</div>
+                                    <div>
+                                        <div className="text-sm font-bold text-white">AI Solutions</div>
+                                        <div className="text-xs text-gray-400">Custom Tools & Automation</div>
+                                    </div>
+                                    <div className="ml-auto text-pink-400 text-xs font-mono">Automated</div>
                                 </div>
 
                                 <div className="mt-6 p-4 rounded-xl bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 text-sm text-center">
-                                    <div className="text-purple-200 font-medium mb-1">🚀 Performance Metrics</div>
-                                    <div className="flex justify-center gap-4 text-xs text-gray-400">
-                                        <span>Lighthouse: 100</span>
-                                        <span>•</span>
-                                        <span>SEO: 100</span>
-                                        <span>•</span>
-                                        <span>A11y: 100</span>
+                                    <div className="text-purple-200 font-medium mb-1">🚀 Recent Wins</div>
+                                    <div className="text-xs text-gray-400">
+                                        Built AI SEO Audit Tool • Scaled SaaS to 50+ Users
                                     </div>
                                 </div>
                             </div>

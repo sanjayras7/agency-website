@@ -1,52 +1,52 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, TrendingUp, Zap, Search, ArrowRight } from 'lucide-react';
+import { ExternalLink, Github, TrendingUp, Zap, Search, ArrowRight, Database, Bot, Code2 } from 'lucide-react';
 
 export default function Projects() {
     const projects = [
         {
-            title: "E-Commerce Redesign",
-            category: "Web Development",
-            description: "A high-performance Shopify Headless build using Next.js. Achieved a 99/100 Core Web Vitals score and increased conversion by 40%.",
-            tags: ["Next.js", "Shopify", "Tailwind CSS"],
-            color: "from-blue-500 to-cyan-500",
-            metrics: [
-                { label: "Performance", value: "99/100", icon: <Zap className="w-3 h-3" /> },
-                { label: "Conversion", value: "+40%", icon: <TrendingUp className="w-3 h-3" /> }
-            ]
-        },
-        {
-            title: "AI SEO Analyzer Tool",
+            title: "AI SEO Audit Tool",
             category: "SaaS Product",
-            description: "My proprietary tool that analyzes websites for Generative Engine Optimization (GEO) readiness. Currently used by 50+ beta testers.",
-            tags: ["React", "Python", "OpenAI API"],
+            description: "A comprehensive SEO & GEO optimization platform built with Next.js 15. Features AI-driven content analysis, automated issue detection, and generative engine visibility scoring.",
+            tags: ["Next.js 15", "Prisma", "Gemini AI", "PostgreSQL"],
             color: "from-purple-500 to-pink-500",
             metrics: [
-                { label: "Users", value: "50+", icon: <Github className="w-3 h-3" /> },
-                { label: "Accuracy", value: "95%", icon: <Search className="w-3 h-3" /> }
+                { label: "AI Analysis", value: "Auto-Fix", icon: <Bot className="w-3 h-3" /> },
+                { label: "Tech Stack", value: "Modern", icon: <Database className="w-3 h-3" /> }
             ]
         },
         {
-            title: "Local Business Growth",
-            category: "SEO & GEO Campaign",
-            description: "Comprehensive local SEO strategy for a dental chain. Ranked #1 for 'Dentist near me' in 5 cities and optimized for Voice Search.",
-            tags: ["Local SEO", "Schema Markup", "GMB"],
+            title: "BillyBills",
+            category: "FinTech Web App",
+            description: "A multi-tenant billing and invoicing application. Handles recurring invoices, custom templates, and financial reporting with real-time data sync.",
+            tags: ["Next.js", "Firebase", "Redux Toolkit", "Tailwind"],
+            color: "from-blue-500 to-cyan-500",
+            metrics: [
+                { label: "Invoices", value: "Recurring", icon: <Zap className="w-3 h-3" /> },
+                { label: "Sync", value: "Real-time", icon: <TrendingUp className="w-3 h-3" /> }
+            ]
+        },
+        {
+            title: "InfoSphere 4.0",
+            category: "Data Tool",
+            description: "Advanced profile scraping and information aggregation tool. Parses GitHub profiles and blogs to generate comprehensive user portfolios in JSON format.",
+            tags: ["Python", "Flask", "BeautifulSoup", "API"],
             color: "from-green-500 to-emerald-500",
             metrics: [
-                { label: "Rank #1", value: "5 Cities", icon: <Search className="w-3 h-3" /> },
-                { label: "Traffic", value: "+200%", icon: <TrendingUp className="w-3 h-3" /> }
+                { label: "Parsing", value: "Multi-Source", icon: <Search className="w-3 h-3" /> },
+                { label: "Export", value: "JSON/CSV", icon: <Database className="w-3 h-3" /> }
             ]
         },
         {
-            title: "Real Estate Dashboard",
-            category: "Web App",
-            description: "A custom CRM and property management dashboard for a real estate agency, featuring automated lead scoring and map integration.",
-            tags: ["Vue.js", "Firebase", "Google Maps API"],
+            title: "AI SEO Platform",
+            category: "Internship Project",
+            description: "Contributed to Trident Solutions' flagship SEO product. Built the AI Auto-Fix module and Visibility Scoring system for enterprise clients.",
+            tags: ["React", "Node.js", "AI Integration"],
             color: "from-orange-500 to-red-500",
             metrics: [
-                { label: "Leads", value: "Auto-Scored", icon: <Zap className="w-3 h-3" /> },
-                { label: "Uptime", value: "99.9%", icon: <TrendingUp className="w-3 h-3" /> }
+                { label: "Impact", value: "Enterprise", icon: <Zap className="w-3 h-3" /> },
+                { label: "Role", value: "Full Stack", icon: <Code2 className="w-3 h-3" /> }
             ]
         }
     ];
@@ -79,7 +79,7 @@ export default function Projects() {
                         transition={{ delay: 0.2 }}
                         className="text-gray-400 max-w-2xl text-lg"
                     >
-                        A showcase of my best work, ranging from high-performance websites to complex AI-driven applications and successful SEO campaigns.
+                        A showcase of my technical expertise, ranging from complex SaaS platforms to AI-driven tools and high-performance web applications.
                     </motion.p>
                 </div>
 

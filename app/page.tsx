@@ -9,34 +9,36 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Sanjay.Dev | Full-Stack Developer & AI SEO Strategist',
-  description: 'Expert Full-Stack Development, GEO (AI Search Optimization), and Custom AI Solutions. I build high-performance digital products that rank and convert.',
-  keywords: ['Full Stack Developer', 'SEO Expert', 'GEO Optimization', 'AI Automation', 'Next.js Developer', 'React Native'],
+  title: 'Sanjay.Dev | Full-Stack Developer & AI SEO Engineer',
+  description: 'Sanjaykumaran B is a Full-Stack Developer and SEO Engineer based in Chennai. Specializing in Next.js, AI Automation, and Generative Engine Optimization (GEO).',
+  keywords: ['Full Stack Developer', 'SEO Expert', 'GEO Optimization', 'AI Automation', 'Next.js Developer', 'React Native', 'Chennai', 'India'],
   openGraph: {
-    title: 'Sanjay.Dev | Full-Stack Developer & AI SEO Strategist',
-    description: 'Building digital experiences that rank and convert. Expert in Next.js, SEO, and AI.',
+    title: 'Sanjay.Dev | Full-Stack Developer & AI SEO Engineer',
+    description: 'Building high-performance digital experiences that rank on Google and AI Search.',
     type: 'website',
+    locale: 'en_US',
+    url: 'https://sanjay.dev',
+    siteName: 'Sanjay.Dev',
   }
 }
 
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
-    name: 'Sanjay.Dev',
-    image: 'https://sanjay.dev/logo.png',
-    description: 'Full-Stack Developer and SEO Strategist specializing in Next.js, AI, and GEO.',
+    '@type': 'Person',
+    name: 'Sanjaykumaran B',
+    url: 'https://sanjay.dev',
+    jobTitle: 'Full-Stack Developer & SEO Engineer',
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'Remote'
+      addressLocality: 'Chennai',
+      addressCountry: 'India'
     },
-    priceRange: '$$$',
-    offers: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Full Stack Development' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO Optimization' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GEO Strategy' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Automation' } }
-    ]
+    sameAs: [
+      'https://github.com/sanjayras7',
+      'https://linkedin.com/in/sanjaykumaran-b'
+    ],
+    knowsAbout: ['Full Stack Development', 'SEO', 'Generative Engine Optimization', 'AI Automation', 'Next.js', 'React Native']
   }
 
   return (
